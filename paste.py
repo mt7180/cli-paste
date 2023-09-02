@@ -17,20 +17,20 @@ def preprocess_data(f1, f2):
 
 
 def paste(rows_f1, rows_f2):
-    """horizontal output of two files side by side"""
+    """output of two text files side by side"""
     max_row_len_f1 = len(max(rows_f1, key=len))
     for left, right in zip(rows_f1, rows_f2):
         print(f"{left:{max_row_len_f1}} {right}")
 
 
 def paste_d(seperator, rows_f1, rows_f2):
-    """usage of specific seperator in-between, e.g. ':'"""
+    """usage of a specific seperator in-between, e.g. ':'"""
     for left, right in zip(rows_f1, rows_f2):
         print(f"{left}{seperator}{right}")
 
 
 def paste_s(rows_f1, rows_f2):
-    """vertical output of two files below each other"""
+    """line-by-line output of two files each below each other"""
     output_f1 = ""
     output_f2 = ""
     for row1, row2 in zip(rows_f1, rows_f2):
