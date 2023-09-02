@@ -1,6 +1,6 @@
 # paste.py
 
-Script/ module to output two text files side by side to the console, based on the paste command in linux. By default, the corresponding lines of each file are separated with tabs.
+command line tool to output two text files side by side to the console (like the paste command in linux). By default, the corresponding lines of each file are separated by spaces.
 
 ### Usage: 
 python3 paste.py [-d "\<seperator\>" | -s] filename1 filename2
