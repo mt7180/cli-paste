@@ -24,7 +24,7 @@ def paste(rows_f1, rows_f2):
 
 
 def paste_d(seperator, rows_f1, rows_f2):
-    """usage of specific seperator inbetween, e.g. ':'"""
+    """usage of specific seperator in-between, e.g. ':'"""
     for left, right in zip(rows_f1, rows_f2):
         print(f"{left}{seperator}{right}")
 
